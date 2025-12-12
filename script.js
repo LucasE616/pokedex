@@ -122,6 +122,7 @@ const buscarPokemon = async (query) => {
       exibirEvolucoes(evolucoes);
 
       infoPokemon.style.display = 'block';
+      entradaPesquisa.value = '';
    } catch (error) {
       mensagemErro.innerText = error.message;
    } finally {
